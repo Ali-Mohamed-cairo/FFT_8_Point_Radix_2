@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+<h1>Instrumentation Results for FFT_8_Point_Radix_2_mex</h1>
+<h2>Summary</h2>
+<p>To re-create this report:</p>
+<pre>  showInstrumentationResults FFT_8_Point_Radix_2_mex -proposeFL -defaultDT numerictype(1,32)</pre>
+
+<p>MEX-function name:</p>
+<pre>FFT_8_Point_Radix_2_mex</pre>
+<p>Timestamp:</p>
+<pre>Tue Aug 19 13:22:25 2025</pre>
+<p>To open this report from the MATLAB command line:</p>
+<pre> web('-browser','O:\ADI_Internship\Assignments\FFT_Final_Project\SystemModelling\instrumentation\FFT_8_Point_Radix_2_mex\html\printable.html')</pre>
+
+
+<h2>Function FFT_8_Point_Radix_2 </h2>
+
+<pre>
+function FFT_Algo_Out = FFT_8_Point_Radix_2(FFT_Algo_In, T) %#codegen
+    % FFT_Algo_In is the input signal to the FFT algorithm
+    % FFT_Algo_Out is the output spectrum of the signal
+
+    FFT_Algo_Out = cast(complex(zeros(1,8)), 'like', T.FFT_Algo_Out);
+
+    W8_0 = cast(1 + 1i * 0,       'like', T.W8_0);
+    W8_1 = cast(0.707 - 1i*0.707, 'like', T.W8_1);
+    W8_2 = cast(0 - 1i*1,         'like', T.W8_2);
+    W8_3 = cast(-0.707 - 1i*0.707,'like', T.W8_3);
+
+    % ------------------ First stage ------------------
+    % MAC_0
+    First_Multi_OUT0 = cast(FFT_Algo_In(4+1) * W8_0, 'like', T.First_Multi_OUT0);
+    First_OUT00      = cast(FFT_Algo_In(0+1) + First_Multi_OUT0, 'like', T.First_OUT00); 
+    First_OUT01      = cast(FFT_Algo_In(0+1) - First_Multi_OUT0, 'like', T.First_OUT01);
+
+    % MAC_1
+    First_Multi_OUT1 = cast(FFT_Algo_In(6+1) * W8_0, 'like', T.First_Multi_OUT1);
+    First_OUT10      = cast(FFT_Algo_In(2+1) + First_Multi_OUT1, 'like', T.First_OUT10); 
+    First_OUT11      = cast(FFT_Algo_In(2+1) - First_Multi_OUT1, 'like', T.First_OUT11);
+
+    % MAC_2
+    First_Multi_OUT2 = cast(FFT_Algo_In(5+1) * W8_0, 'like', T.First_Multi_OUT2);
+    First_OUT20      = cast(FFT_Algo_In(1+1) + First_Multi_OUT2, 'like', T.First_OUT20);
+    First_OUT21      = cast(FFT_Algo_In(1+1) - First_Multi_OUT2, 'like', T.First_OUT21);
+
+    % MAC_3
+    First_Multi_OUT3 = cast(FFT_Algo_In(7+1) * W8_0, 'like', T.First_Multi_OUT3);
+    First_OUT30      = cast(FFT_Algo_In(3+1) + First_Multi_OUT3, 'like', T.First_OUT30); 
+    First_OUT31      = cast(FFT_Algo_In(3+1) - First_Multi_OUT3, 'like', T.First_OUT31);
+
+    % ------------------ Second stage ------------------
+    % MAC_0
+    Second_Multi_OUT0 = cast(First_OUT10 * W8_0, 'like', T.Second_Multi_OUT0);
+    Second_OUT00      = cast(First_OUT00 + Second_Multi_OUT0, 'like', T.Second_OUT00);
+    Second_OUT01      = cast(First_OUT00 - Second_Multi_OUT0, 'like', T.Second_OUT01);
+
+    % MAC_1
+    Second_Multi_OUT1 = cast(First_OUT11 * W8_2, 'like', T.Second_Multi_OUT1);
+    Second_OUT10      = cast(First_OUT01 + Second_Multi_OUT1, 'like', T.Second_OUT10);
+    Second_OUT11      = cast(First_OUT01 - Second_Multi_OUT1, 'like', T.Second_OUT11);
+
+    % MAC_2
+    Second_Multi_OUT2 = cast(First_OUT30 * W8_0, 'like', T.Second_Multi_OUT2);
+    Second_OUT20      = cast(First_OUT20 + Second_Multi_OUT2, 'like', T.Second_OUT20);
+    Second_OUT21      = cast(First_OUT20 - Second_Multi_OUT2, 'like', T.Second_OUT21);
+
+    % MAC_3
+    Second_Multi_OUT3 = cast(First_OUT31 * W8_2, 'like', T.Second_Multi_OUT3);
+    Second_OUT30      = cast(First_OUT21 + Second_Multi_OUT3, 'like', T.Second_OUT30);
+    Second_OUT31      = cast(First_OUT21 - Second_Multi_OUT3, 'like', T.Second_OUT31);
+
+    % ------------------ Third stage ------------------
+    % MAC_0
+    Third_Multi_OUT0  = cast(Second_OUT20 * W8_0, 'like', T.Third_Multi_OUT0);
+    FFT_Algo_Out(0+1) = cast(Second_OUT00 + Third_Multi_OUT0, 'like', T.FFT_Algo_Out);
+    FFT_Algo_Out(4+1) = cast(Second_OUT00 - Third_Multi_OUT0, 'like', T.FFT_Algo_Out);
+
+    % MAC_1
+    Third_Multi_OUT1  = cast(Second_OUT30 * W8_1, 'like', T.Third_Multi_OUT1);
+    FFT_Algo_Out(1+1) = cast(Second_OUT10 + Third_Multi_OUT1, 'like', T.FFT_Algo_Out);
+    FFT_Algo_Out(5+1) = cast(Second_OUT10 - Third_Multi_OUT1, 'like', T.FFT_Algo_Out);
+
+    % MAC_2
+    Third_Multi_OUT2  = cast(Second_OUT21 * W8_2, 'like', T.Third_Multi_OUT2);
+    FFT_Algo_Out(2+1) = cast(Second_OUT01 + Third_Multi_OUT2, 'like', T.FFT_Algo_Out);
+    FFT_Algo_Out(6+1) = cast(Second_OUT01 - Third_Multi_OUT2, 'like', T.FFT_Algo_Out);
+
+    % MAC_3
+    Third_Multi_OUT3  = cast(Second_OUT31 * W8_3, 'like', T.Third_Multi_OUT3);
+    FFT_Algo_Out(3+1) = cast(Second_OUT11 + Third_Multi_OUT3, 'like', T.FFT_Algo_Out);
+    FFT_Algo_Out(7+1) = cast(Second_OUT11 - Third_Multi_OUT3, 'like', T.FFT_Algo_Out);
+end
+</pre>
+<table style="border-collapse: collapse; border: solid;" border="1">
+<caption><b>Logged Variables for FFT_8_Point_Radix_2</b></caption>
+<tr><th>Variable</th><th>Type</th><th>Size</th><th>Class</th><th>Complex</th><th>Signedness</th><th>WL</th><th>FL</th><th>Percent of<br>Current Range</th><th>Always<br>Whole Number</th><th>SimMin</th><th>SimMax</th></tr>
+<tr><td><code>FFT_Algo_In</code></td><td><code>Input</code></td><td><code>1&nbsp;x&nbsp;8</code></td><td><code>embedded.fi</code></td><td><code>No</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code><span style="background-color: yellow"><span style="color: black"><b>100</b></span></span></code></td><td><code>No</code></td><td><code>0</code></td><td><code>0.99609375</code></td></tr>
+<tr><td><code>FFT_Algo_Out</code></td><td><code>Output</code></td><td><code>1&nbsp;x&nbsp;8</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>8</code></td><td><code>71</code></td><td><code>No</code></td><td><code>-2.03125</code></td><td><code>5.6171875</code></td></tr>
+<tr><td><code>First_Multi_OUT0</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code><span style="background-color: yellow"><span style="color: black"><b>100</b></span></span></code></td><td><code>No</code></td><td><code>0</code></td><td><code>0.98828125</code></td></tr>
+<tr><td><code>First_Multi_OUT1</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code><span style="background-color: yellow"><span style="color: black"><b>100</b></span></span></code></td><td><code>No</code></td><td><code>0</code></td><td><code>0.99609375</code></td></tr>
+<tr><td><code>First_Multi_OUT2</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code><span style="background-color: yellow"><span style="color: black"><b>100</b></span></span></code></td><td><code>No</code></td><td><code>0</code></td><td><code>0.99609375</code></td></tr>
+<tr><td><code>First_Multi_OUT3</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code><span style="background-color: yellow"><span style="color: black"><b>100</b></span></span></code></td><td><code>No</code></td><td><code>0</code></td><td><code>0.99609375</code></td></tr>
+<tr><td><code>First_OUT00</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code>90</code></td><td><code>No</code></td><td><code>0</code></td><td><code>1.7890625</code></td></tr>
+<tr><td><code>First_OUT01</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code>95</code></td><td><code>No</code></td><td><code>-0.94140625</code></td><td><code>0.88671875</code></td></tr>
+<tr><td><code>First_OUT10</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code><span style="background-color: yellow"><span style="color: black"><b>100</b></span></span></code></td><td><code>No</code></td><td><code>0</code></td><td><code>1.9921875</code></td></tr>
+<tr><td><code>First_OUT11</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code>77</code></td><td><code>No</code></td><td><code>-0.6875</code></td><td><code>0.765625</code></td></tr>
+<tr><td><code>First_OUT20</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code>92</code></td><td><code>No</code></td><td><code>0</code></td><td><code>1.8203125</code></td></tr>
+<tr><td><code>First_OUT21</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code>97</code></td><td><code>No</code></td><td><code>-0.90625</code></td><td><code>0.95703125</code></td></tr>
+<tr><td><code>First_OUT30</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code>95</code></td><td><code>No</code></td><td><code>0</code></td><td><code>1.88671875</code></td></tr>
+<tr><td><code>First_OUT31</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code>93</code></td><td><code>No</code></td><td><code>-0.8046875</code></td><td><code>0.91796875</code></td></tr>
+<tr><td><code>Second_Multi_OUT0</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code><span style="background-color: yellow"><span style="color: black"><b>100</b></span></span></code></td><td><code>No</code></td><td><code>0</code></td><td><code>1.9921875</code></td></tr>
+<tr><td><code>Second_Multi_OUT1</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code>77</code></td><td><code>No</code></td><td><code>-0.765625</code></td><td><code>0.6875</code></td></tr>
+<tr><td><code>Second_Multi_OUT2</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code>95</code></td><td><code>No</code></td><td><code>0</code></td><td><code>1.88671875</code></td></tr>
+<tr><td><code>Second_Multi_OUT3</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code>92</code></td><td><code>No</code></td><td><code>-0.91796875</code></td><td><code>0.8046875</code></td></tr>
+<tr><td><code>Second_OUT00</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>11</code></td><td><code>8</code></td><td><code>91</code></td><td><code>No</code></td><td><code>0</code></td><td><code>3.6171875</code></td></tr>
+<tr><td><code>Second_OUT01</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code>64</code></td><td><code>No</code></td><td><code>-1.1875</code></td><td><code>1.2734375</code></td></tr>
+<tr><td><code>Second_OUT10</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code>95</code></td><td><code>No</code></td><td><code>-0.94140625</code></td><td><code>0.88671875</code></td></tr>
+<tr><td><code>Second_OUT11</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code>95</code></td><td><code>No</code></td><td><code>-0.94140625</code></td><td><code>0.88671875</code></td></tr>
+<tr><td><code>Second_OUT20</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>11</code></td><td><code>8</code></td><td><code>81</code></td><td><code>No</code></td><td><code>0</code></td><td><code>3.2109375</code></td></tr>
+<tr><td><code>Second_OUT21</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code>71</code></td><td><code>No</code></td><td><code>-1.26953125</code></td><td><code>1.40625</code></td></tr>
+<tr><td><code>Second_OUT30</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code>97</code></td><td><code>No</code></td><td><code>-0.91796875</code></td><td><code>0.95703125</code></td></tr>
+<tr><td><code>Second_OUT31</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>9</code></td><td><code>8</code></td><td><code>97</code></td><td><code>No</code></td><td><code>-0.90625</code></td><td><code>0.95703125</code></td></tr>
+<tr><td><code>Third_Multi_OUT0</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>11</code></td><td><code>8</code></td><td><code>81</code></td><td><code>No</code></td><td><code>0</code></td><td><code>3.2109375</code></td></tr>
+<tr><td><code>Third_Multi_OUT1</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code>62</code></td><td><code>No</code></td><td><code>-1.23046875</code></td><td><code>0.953125</code></td></tr>
+<tr><td><code>Third_Multi_OUT2</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code>71</code></td><td><code>No</code></td><td><code>-1.40625</code></td><td><code>1.26953125</code></td></tr>
+<tr><td><code>Third_Multi_OUT3</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>10</code></td><td><code>8</code></td><td><code>62</code></td><td><code>No</code></td><td><code>-1.23046875</code></td><td><code>0.84765625</code></td></tr>
+<tr><td><code>W8_0</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>0</code></td><td><code>< 1</code></td><td><code><b>Yes</b></code></td><td><code>0</code></td><td><code>1</code></td></tr>
+<tr><td><code>W8_1</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>8</code></td><td><code>9</code></td><td><code>No</code></td><td><code>-0.70703125</code></td><td><code>0.70703125</code></td></tr>
+<tr><td><code>W8_2</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>8</code></td><td><code>13</code></td><td><code><b>Yes</b></code></td><td><code>-1</code></td><td><code>0</code></td></tr>
+<tr><td><code>W8_3</code></td><td><code>Local</code></td><td><code>1&nbsp;x&nbsp;1</code></td><td><code>embedded.fi</code></td><td><code>Yes</code></td><td><code>Signed</code></td><td><code>12</code></td><td><code>8</code></td><td><code>9</code></td><td><code>No</code></td><td><code>-0.70703125</code></td><td><code>-0.70703125</code></td></tr>
+</table>
+</html>

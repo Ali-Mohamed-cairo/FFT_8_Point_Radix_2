@@ -1,0 +1,247 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dO:/ADI_Internship/Assignments/FFT_Final_Project/RTL_And_Verification
+T_opt
+!s110 1755778506
+Vj[AQD<E<AD`3APmdzPz`V0
+04 27 4 work FFT_8_Point_Radix_2_Wrapper fast 0
+=1-002b67dfc614-68a70dc9-2f8-1030
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z0 tCvgOpt 0
+n@_opt
+OL;O;2021.1;73
+vComplex_Add_Sub
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1755778496
+!i10b 1
+!s100 aT4gN>hm1ARS^Na0_@Cj31
+IBA2CaXnm[R<JBX`jYMi`i2
+S1
+Z3 dO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files
+w1755748238
+8O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv
+FO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv
+!i122 50
+L0 1 66
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z6 !s108 1755778496.000000
+!s107 O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv|
+!i113 0
+Z7 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R0
+n@complex_@add_@sub
+vComplex_Multi
+R1
+R2
+!i10b 1
+!s100 cjUG^Rida1Z4ne1jCKFX62
+IaoUo4JSUXd6kmJIe[LJVI2
+S1
+R3
+w1755748195
+8O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv
+FO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv
+!i122 51
+L0 1 60
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv|
+!i113 0
+R7
+R0
+n@complex_@multi
+vDn_Counter
+R1
+R2
+!i10b 1
+!s100 d1880R1KRO>E2FBMaGB821
+I_828d<`aU;?B@YQf_3E<51
+S1
+R3
+w1755769513
+8O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Dn_Counter.sv
+FO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Dn_Counter.sv
+!i122 52
+L0 1 31
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Dn_Counter.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Dn_Counter.sv|
+!i113 0
+R7
+R0
+n@dn_@counter
+vFFT_8_Point_Radix_2_tb
+R1
+R2
+!i10b 1
+!s100 dZ9?M60Li]D5U=:]d2MUI3
+I^Pb1WeE?MTRDc[85CkN[e3
+S1
+R3
+w1755753696
+8O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_tb.sv
+FO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_tb.sv
+!i122 53
+L0 9 365
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_tb.sv|
+!i113 0
+R7
+R0
+n@f@f@t_8_@point_@radix_2_tb
+vFFT_8_Point_Radix_2_TOP
+R1
+R2
+!i10b 1
+!s100 I0FQ`;iGcOMX:Z=F0NgFV1
+IZNK3iQ8JF>iK72kcL;5=[3
+S1
+R3
+w1755743067
+8O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv
+FO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv
+!i122 54
+L0 1 530
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv|
+!i113 0
+R7
+R0
+n@f@f@t_8_@point_@radix_2_@t@o@p
+vFFT_8_Point_Radix_2_Wrapper
+R1
+R2
+!i10b 1
+!s100 7oi@JNMnPFc];525UD?]>1
+IkgFJJC08Bd`Sk]58WZQ<e0
+S1
+R3
+w1755777140
+8O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv
+FO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv
+!i122 55
+L0 1 492
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv|
+!i113 0
+R7
+R0
+n@f@f@t_8_@point_@radix_2_@wrapper
+vMAC_Unit
+R1
+R2
+!i10b 1
+!s100 b20z5J:PRL7;WQAThL1l@0
+IC;1=Udz0iB@g?oa`WMAk<3
+S1
+R3
+w1755740820
+8O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv
+FO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv
+!i122 56
+L0 1 110
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv|
+!i113 0
+R7
+R0
+n@m@a@c_@unit
+vSingle_Stage_FFT_8_2
+R1
+R2
+!i10b 1
+!s100 abT[m7mgJj^HS69T79bI60
+I6;;E]67UD7cQdAaJOO`491
+S1
+R3
+w1755685381
+8O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv
+FO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv
+!i122 57
+L0 1 241
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv|
+!i113 0
+R7
+R0
+n@single_@stage_@f@f@t_8_2
+vTwiddle_LUT
+R1
+!s110 1755778497
+!i10b 1
+!s100 Oii2gV33c3YIoRKgRko[k1
+I=fQUIE`oDJY]iQBBOzl3>2
+S1
+R3
+w1755695086
+8O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Twiddle_LUT.sv
+FO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Twiddle_LUT.sv
+!i122 58
+L0 1 34
+R4
+R5
+r1
+!s85 0
+31
+!s108 1755778497.000000
+!s107 O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Twiddle_LUT.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Twiddle_LUT.sv|
+!i113 0
+R7
+R0
+n@twiddle_@l@u@t

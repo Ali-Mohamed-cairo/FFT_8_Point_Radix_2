@@ -1,0 +1,1541 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Aug 23 19:00:08 2025
+# Process ID: 2936
+# Current directory: O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.runs/synth_1
+# Command line: vivado.exe -log FFT_8_Point_Radix_2_Wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_8_Point_Radix_2_Wrapper.tcl
+# Log file: O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.runs/synth_1/FFT_8_Point_Radix_2_Wrapper.vds
+# Journal file: O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FFT_8_Point_Radix_2_Wrapper.tcl -notrace
+Command: synth_design -top FFT_8_Point_Radix_2_Wrapper -part xc7z020clg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9548 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 409.934 ; gain = 96.223
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'FFT_8_Point_Radix_2_Wrapper' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv:1]
+	Parameter SIGNAL_SAMPLE_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNAL_SAMPLE_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter FIRST_MULTI_OUT bound to: 9 - type: integer 
+	Parameter FIRST_OUT_x0 bound to: 10 - type: integer 
+	Parameter FIRST_OUT_x1 bound to: 9 - type: integer 
+	Parameter SECOND_MULTI_0or2 bound to: 10 - type: integer 
+	Parameter SECOND_MULTI_1or3 bound to: 9 - type: integer 
+	Parameter SECOND_OUT_00or20 bound to: 11 - type: integer 
+	Parameter SECOND_OUT_01or21 bound to: 10 - type: integer 
+	Parameter SECOND_OUT_1xor3x bound to: 9 - type: integer 
+	Parameter THIRD_MULTI_OUT0 bound to: 11 - type: integer 
+	Parameter THIRD_MULTI_OUT_1or2or3 bound to: 11 - type: integer 
+	Parameter THIRD_OUTx_x bound to: 12 - type: integer 
+	Parameter IDLE bound to: 0 - type: integer 
+	Parameter SERIAL_IN bound to: 1 - type: integer 
+	Parameter PARALLEL_LOAD bound to: 11 - type: integer 
+	Parameter VALID_OUT bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'Dn_Counter' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Dn_Counter.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Dn_Counter' (1#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Dn_Counter.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'FFT_8_Point_Radix_2_TOP' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:1]
+	Parameter SIGNALSAMPLE_0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_2_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_2_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_3_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_3_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_4_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_4_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_5_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_5_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_6_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_6_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_7_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SIGNALSAMPLE_7_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter FIRST_MULTI0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_MULTI0_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter THIRD_MULTI0_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter FIRST_MULTI0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_MULTI0_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter THIRD_MULTI0_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter FIRST_MULTI1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_MULTI1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_MULTI1_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter FIRST_MULTI1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_MULTI1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_MULTI1_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter FIRST_MULTI2_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_MULTI2_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter THIRD_MULTI2_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter FIRST_MULTI2_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_MULTI2_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter THIRD_MULTI2_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter FIRST_MULTI3_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_MULTI3_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_MULTI3_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter FIRST_MULTI3_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_MULTI3_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_MULTI3_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter FIRST_OUT00_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter SECOND_OUT00_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter THIRD_OUT00_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT00_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter SECOND_OUT00_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter THIRD_OUT00_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT01_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_OUT01_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter THIRD_OUT01_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT01_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_OUT01_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter THIRD_OUT01_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT10_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter SECOND_OUT10_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_OUT10_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT10_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter SECOND_OUT10_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_OUT10_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT11_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_OUT11_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_OUT11_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT11_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_OUT11_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_OUT11_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT20_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter SECOND_OUT20_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter THIRD_OUT20_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT20_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter SECOND_OUT20_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter THIRD_OUT20_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT21_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_OUT21_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter THIRD_OUT21_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT21_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_OUT21_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter THIRD_OUT21_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT30_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter SECOND_OUT30_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_OUT30_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT30_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter SECOND_OUT30_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_OUT30_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT31_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_OUT31_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_OUT31_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter FIRST_OUT31_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter SECOND_OUT31_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter THIRD_OUT31_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter W8_0 bound to: 2'b00 
+	Parameter W8_1 bound to: 2'b01 
+	Parameter W8_2 bound to: 2'b10 
+	Parameter W8_3 bound to: 2'b11 
+INFO: [Synth 8-6157] synthesizing module 'Single_Stage_FFT_8_2' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv:1]
+	Parameter IN00_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN00_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN01_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN01_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN01_INT bound to: 1 - type: integer 
+	Parameter IN01_FRAC bound to: 8 - type: integer 
+	Parameter IN10_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN10_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN11_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN11_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN11_INT bound to: 1 - type: integer 
+	Parameter IN11_FRAC bound to: 8 - type: integer 
+	Parameter IN20_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN20_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN21_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN21_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN21_INT bound to: 1 - type: integer 
+	Parameter IN21_FRAC bound to: 8 - type: integer 
+	Parameter IN30_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN30_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN31_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN31_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN31_INT bound to: 1 - type: integer 
+	Parameter IN31_FRAC bound to: 8 - type: integer 
+	Parameter MULTI0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI0_INT bound to: 1 - type: integer 
+	Parameter MULTI0_FRAC bound to: 8 - type: integer 
+	Parameter MULTI1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI1_INT bound to: 1 - type: integer 
+	Parameter MULTI1_FRAC bound to: 8 - type: integer 
+	Parameter MULTI2_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI2_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI2_INT bound to: 1 - type: integer 
+	Parameter MULTI2_FRAC bound to: 8 - type: integer 
+	Parameter MULTI3_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI3_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI3_INT bound to: 1 - type: integer 
+	Parameter MULTI3_FRAC bound to: 8 - type: integer 
+	Parameter OUT00_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT00_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT00_INT bound to: 2 - type: integer 
+	Parameter OUT01_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT01_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT01_INT bound to: 1 - type: integer 
+	Parameter OUT10_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT10_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT10_INT bound to: 2 - type: integer 
+	Parameter OUT11_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT11_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT11_INT bound to: 1 - type: integer 
+	Parameter OUT20_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT20_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT20_INT bound to: 2 - type: integer 
+	Parameter OUT21_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT21_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT21_INT bound to: 1 - type: integer 
+	Parameter OUT30_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT30_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT30_INT bound to: 2 - type: integer 
+	Parameter OUT31_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT31_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT31_INT bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MAC_Unit' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_INT bound to: 1 - type: integer 
+	Parameter IN1_FRAC bound to: 8 - type: integer 
+	Parameter MULTI_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI_INT bound to: 1 - type: integer 
+	Parameter MULTI_FRAC bound to: 8 - type: integer 
+	Parameter OUT0_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT0_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT0_INT bound to: 2 - type: integer 
+	Parameter OUT1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT1_INT bound to: 1 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'Complex_Add_Sub' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT_INT bound to: 2 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+	Parameter MAX_RESULT_WIDTH bound to: 13 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Add_Sub' (2#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Twiddle_LUT' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Twiddle_LUT.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Twiddle_LUT' (3#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Twiddle_LUT.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Complex_Multi' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN0_INT bound to: 1 - type: integer 
+	Parameter IN0_FRAC bound to: 8 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 4'b1100 
+	Parameter IN1_IMG_WIDTH bound to: 4'b1100 
+	Parameter OUT_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT_INT bound to: 1 - type: integer 
+	Parameter OUT_FRAC bound to: 8 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 17 - type: integer 
+	Parameter FULL_PRECISION_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Multi' (4#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Complex_Add_Sub__parameterized0' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT_INT bound to: 1 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+	Parameter MAX_RESULT_WIDTH bound to: 13 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Add_Sub__parameterized0' (4#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'MAC_Unit' (5#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Stage_FFT_8_2' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Single_Stage_FFT_8_2__parameterized0' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv:1]
+	Parameter IN00_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN00_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN01_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN01_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN01_INT bound to: 2 - type: integer 
+	Parameter IN01_FRAC bound to: 8 - type: integer 
+	Parameter IN10_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN10_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN11_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN11_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN11_INT bound to: 1 - type: integer 
+	Parameter IN11_FRAC bound to: 8 - type: integer 
+	Parameter IN20_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN20_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN21_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN21_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN21_INT bound to: 2 - type: integer 
+	Parameter IN21_FRAC bound to: 8 - type: integer 
+	Parameter IN30_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN30_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN31_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN31_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN31_INT bound to: 1 - type: integer 
+	Parameter IN31_FRAC bound to: 8 - type: integer 
+	Parameter MULTI0_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter MULTI0_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter MULTI0_INT bound to: 2 - type: integer 
+	Parameter MULTI0_FRAC bound to: 8 - type: integer 
+	Parameter MULTI1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI1_INT bound to: 1 - type: integer 
+	Parameter MULTI1_FRAC bound to: 8 - type: integer 
+	Parameter MULTI2_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter MULTI2_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter MULTI2_INT bound to: 2 - type: integer 
+	Parameter MULTI2_FRAC bound to: 8 - type: integer 
+	Parameter MULTI3_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI3_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI3_INT bound to: 1 - type: integer 
+	Parameter MULTI3_FRAC bound to: 8 - type: integer 
+	Parameter OUT00_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter OUT00_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter OUT00_INT bound to: 3 - type: integer 
+	Parameter OUT01_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT01_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT01_INT bound to: 2 - type: integer 
+	Parameter OUT10_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT10_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT10_INT bound to: 1 - type: integer 
+	Parameter OUT11_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT11_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT11_INT bound to: 1 - type: integer 
+	Parameter OUT20_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter OUT20_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter OUT20_INT bound to: 3 - type: integer 
+	Parameter OUT21_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT21_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT21_INT bound to: 2 - type: integer 
+	Parameter OUT30_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT30_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT30_INT bound to: 1 - type: integer 
+	Parameter OUT31_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT31_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT31_INT bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MAC_Unit__parameterized0' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_INT bound to: 2 - type: integer 
+	Parameter IN1_FRAC bound to: 8 - type: integer 
+	Parameter MULTI_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter MULTI_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter MULTI_INT bound to: 2 - type: integer 
+	Parameter MULTI_FRAC bound to: 8 - type: integer 
+	Parameter OUT0_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter OUT0_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter OUT0_INT bound to: 3 - type: integer 
+	Parameter OUT1_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT1_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT1_INT bound to: 2 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'Complex_Add_Sub__parameterized1' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_INT bound to: 3 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+	Parameter MAX_RESULT_WIDTH bound to: 13 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Add_Sub__parameterized1' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Complex_Multi__parameterized0' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN0_INT bound to: 2 - type: integer 
+	Parameter IN0_FRAC bound to: 8 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 4'b1100 
+	Parameter IN1_IMG_WIDTH bound to: 4'b1100 
+	Parameter OUT_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT_INT bound to: 2 - type: integer 
+	Parameter OUT_FRAC bound to: 8 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 17 - type: integer 
+	Parameter FULL_PRECISION_WIDTH bound to: 23 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Multi__parameterized0' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Complex_Add_Sub__parameterized2' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter OUT_INT bound to: 2 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+	Parameter MAX_RESULT_WIDTH bound to: 13 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Add_Sub__parameterized2' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'MAC_Unit__parameterized0' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'MAC_Unit__parameterized1' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_INT bound to: 1 - type: integer 
+	Parameter IN1_FRAC bound to: 8 - type: integer 
+	Parameter MULTI_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter MULTI_INT bound to: 1 - type: integer 
+	Parameter MULTI_FRAC bound to: 8 - type: integer 
+	Parameter OUT0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT0_INT bound to: 1 - type: integer 
+	Parameter OUT1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter OUT1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter OUT1_INT bound to: 1 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'MAC_Unit__parameterized1' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Stage_FFT_8_2__parameterized0' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Single_Stage_FFT_8_2__parameterized1' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv:1]
+	Parameter IN00_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter IN00_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter IN01_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter IN01_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter IN01_INT bound to: 3 - type: integer 
+	Parameter IN01_FRAC bound to: 8 - type: integer 
+	Parameter IN10_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN10_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN11_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN11_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN11_INT bound to: 2 - type: integer 
+	Parameter IN11_FRAC bound to: 8 - type: integer 
+	Parameter IN20_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN20_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN21_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN21_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN21_INT bound to: 1 - type: integer 
+	Parameter IN21_FRAC bound to: 8 - type: integer 
+	Parameter IN30_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN30_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN31_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN31_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN31_INT bound to: 1 - type: integer 
+	Parameter IN31_FRAC bound to: 8 - type: integer 
+	Parameter MULTI0_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI0_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI0_INT bound to: 3 - type: integer 
+	Parameter MULTI0_FRAC bound to: 8 - type: integer 
+	Parameter MULTI1_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI1_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI1_INT bound to: 2 - type: integer 
+	Parameter MULTI1_FRAC bound to: 8 - type: integer 
+	Parameter MULTI2_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI2_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI2_INT bound to: 2 - type: integer 
+	Parameter MULTI2_FRAC bound to: 8 - type: integer 
+	Parameter MULTI3_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI3_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI3_INT bound to: 2 - type: integer 
+	Parameter MULTI3_FRAC bound to: 8 - type: integer 
+	Parameter OUT00_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT00_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT00_INT bound to: 4 - type: integer 
+	Parameter OUT01_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT01_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT01_INT bound to: 4 - type: integer 
+	Parameter OUT10_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT10_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT10_INT bound to: 4 - type: integer 
+	Parameter OUT11_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT11_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT11_INT bound to: 4 - type: integer 
+	Parameter OUT20_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT20_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT20_INT bound to: 4 - type: integer 
+	Parameter OUT21_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT21_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT21_INT bound to: 4 - type: integer 
+	Parameter OUT30_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT30_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT30_INT bound to: 4 - type: integer 
+	Parameter OUT31_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT31_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT31_INT bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'MAC_Unit__parameterized2' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter IN1_INT bound to: 3 - type: integer 
+	Parameter IN1_FRAC bound to: 8 - type: integer 
+	Parameter MULTI_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI_INT bound to: 3 - type: integer 
+	Parameter MULTI_FRAC bound to: 8 - type: integer 
+	Parameter OUT0_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT0_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT0_INT bound to: 4 - type: integer 
+	Parameter OUT1_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT1_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT1_INT bound to: 4 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'Complex_Add_Sub__parameterized3' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_INT bound to: 4 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+	Parameter MAX_RESULT_WIDTH bound to: 13 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Add_Sub__parameterized3' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Complex_Multi__parameterized1' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter IN0_INT bound to: 3 - type: integer 
+	Parameter IN0_FRAC bound to: 8 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 4'b1100 
+	Parameter IN1_IMG_WIDTH bound to: 4'b1100 
+	Parameter OUT_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_INT bound to: 3 - type: integer 
+	Parameter OUT_FRAC bound to: 8 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 17 - type: integer 
+	Parameter FULL_PRECISION_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Multi__parameterized1' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'MAC_Unit__parameterized2' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'MAC_Unit__parameterized3' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_INT bound to: 2 - type: integer 
+	Parameter IN1_FRAC bound to: 8 - type: integer 
+	Parameter MULTI_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI_INT bound to: 2 - type: integer 
+	Parameter MULTI_FRAC bound to: 8 - type: integer 
+	Parameter OUT0_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT0_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT0_INT bound to: 4 - type: integer 
+	Parameter OUT1_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT1_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT1_INT bound to: 4 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'Complex_Add_Sub__parameterized4' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_INT bound to: 4 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+	Parameter MAX_RESULT_WIDTH bound to: 13 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Add_Sub__parameterized4' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Complex_Multi__parameterized2' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 10 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 10 - type: integer 
+	Parameter IN0_INT bound to: 2 - type: integer 
+	Parameter IN0_FRAC bound to: 8 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 4'b1100 
+	Parameter IN1_IMG_WIDTH bound to: 4'b1100 
+	Parameter OUT_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_INT bound to: 2 - type: integer 
+	Parameter OUT_FRAC bound to: 8 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 17 - type: integer 
+	Parameter FULL_PRECISION_WIDTH bound to: 23 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Multi__parameterized2' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'MAC_Unit__parameterized3' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'MAC_Unit__parameterized4' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_INT bound to: 1 - type: integer 
+	Parameter IN1_FRAC bound to: 8 - type: integer 
+	Parameter MULTI_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter MULTI_INT bound to: 2 - type: integer 
+	Parameter MULTI_FRAC bound to: 8 - type: integer 
+	Parameter OUT0_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT0_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT0_INT bound to: 4 - type: integer 
+	Parameter OUT1_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT1_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT1_INT bound to: 4 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+INFO: [Synth 8-6157] synthesizing module 'Complex_Add_Sub__parameterized5' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter IN1_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_REAL_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 12 - type: integer 
+	Parameter OUT_INT bound to: 4 - type: integer 
+	Parameter ADDITION bound to: 1'b0 
+	Parameter SUBTRACTION bound to: 1'b1 
+	Parameter MAX_RESULT_WIDTH bound to: 13 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 7 - type: integer 
+INFO: [Synth 8-226] default block is never used [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Add_Sub__parameterized5' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:1]
+INFO: [Synth 8-6157] synthesizing module 'Complex_Multi__parameterized3' [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:1]
+	Parameter IN0_REAL_WIDTH bound to: 9 - type: integer 
+	Parameter IN0_IMG_WIDTH bound to: 9 - type: integer 
+	Parameter IN0_INT bound to: 1 - type: integer 
+	Parameter IN0_FRAC bound to: 8 - type: integer 
+	Parameter IN1_REAL_WIDTH bound to: 4'b1100 
+	Parameter IN1_IMG_WIDTH bound to: 4'b1100 
+	Parameter OUT_REAL_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_IMG_WIDTH bound to: 11 - type: integer 
+	Parameter OUT_INT bound to: 2 - type: integer 
+	Parameter OUT_FRAC bound to: 8 - type: integer 
+	Parameter POSITION_BEFORE_VIRTUAL_DECIMAL_POINT bound to: 17 - type: integer 
+	Parameter FULL_PRECISION_WIDTH bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Complex_Multi__parameterized3' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'MAC_Unit__parameterized4' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Stage_FFT_8_2__parameterized1' (6#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_8_Point_Radix_2_TOP' (7#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'FFT_8_Point_Radix_2_Wrapper' (8#1) [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 464.945 ; gain = 151.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 464.945 ; gain = 151.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 464.945 ; gain = 151.234
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.srcs/constrs_1/new/constrs.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.srcs/constrs_1/new/constrs.xdc:59]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.srcs/constrs_1/new/constrs.xdc:64]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.srcs/constrs_1/new/constrs.xdc:67]
+Finished Parsing XDC File [O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.srcs/constrs_1/new/constrs.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.srcs/constrs_1/new/constrs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/FFT_8_Point_Radix_2_Wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/FFT_8_Point_Radix_2_Wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 865.344 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 865.344 ; gain = 551.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 865.344 ; gain = 551.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 865.344 ; gain = 551.633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:35]
+INFO: [Synth 8-802] inferred FSM for state register 'Cu_State_reg' in module 'FFT_8_Point_Radix_2_Wrapper'
+INFO: [Synth 8-5544] ROM "Counter_Down" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Counter_Load" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Shift_IN0_Real" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "SignalSample_0_Real" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Next_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Next_State" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Next_State" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                             0000
+               SERIAL_IN |                               01 |                             0001
+           PARALLEL_LOAD |                               10 |                             1011
+               VALID_OUT |                               11 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'Cu_State_reg' using encoding 'sequential' in module 'FFT_8_Point_Radix_2_Wrapper'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 865.344 ; gain = 551.633
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 16    
+	   3 Input     11 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 12    
+	   3 Input      9 Bit       Adders := 16    
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 32    
+	               11 Bit    Registers := 12    
+	               10 Bit    Registers := 16    
+	                9 Bit    Registers := 76    
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 12    
+	   2 Input     12 Bit        Muxes := 32    
+	   4 Input     11 Bit        Muxes := 12    
+	   2 Input     11 Bit        Muxes := 4     
+	   2 Input     10 Bit        Muxes := 12    
+	   2 Input      9 Bit        Muxes := 16    
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FFT_8_Point_Radix_2_Wrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 16    
+	                9 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 16    
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Dn_Counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Complex_Add_Sub 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module Twiddle_LUT 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+Module Complex_Multi 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 2     
+Module Complex_Add_Sub__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 2     
++---Registers : 
+	                9 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+Module Complex_Add_Sub__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 2     
+Module Complex_Multi__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 2     
+Module Complex_Add_Sub__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module Complex_Add_Sub__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module Complex_Multi__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
+Module Complex_Add_Sub__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module Complex_Multi__parameterized2 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
+Module Complex_Add_Sub__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     12 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+Module Complex_Multi__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 2     
+Module FFT_8_Point_Radix_2_TOP 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 16    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_3/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_3/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_2/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_1/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_2/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Real0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Img1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Img1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Img0, operation Mode is: C+A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Img0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Img0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Img1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Img0.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Real1, operation Mode is: A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Real1.
+DSP Report: Generating DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Real0, operation Mode is: C-A*B.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Real0 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Real0.
+DSP Report: operator FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Real1 is absorbed into DSP FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_0/Cplx_Multiplier/OUT_Real0.
+INFO: [Synth 8-3886] merging instance 'Shift_IN0_Real_reg[8]' (FDCE) to 'Shift_IN7_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN0_Img_reg[8]' (FDCE) to 'Shift_IN7_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN7_Real_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_0_Real_reg[8]' (FDCE) to 'SignalSample_7_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_0_Img_reg[8]' (FDCE) to 'SignalSample_7_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_7_Real_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN7_Img_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN6_Real_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN5_Real_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN3_Real_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN00_Real_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN31_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN00_Img_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN31_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN31_Real_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN01_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_7_Img_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_6_Real_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN6_Img_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_5_Real_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN5_Img_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_3_Real_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN3_Img_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN31_Img_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN30_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN4_Real_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN2_Real_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN11_Real_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN30_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_6_Img_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN1_Real_reg[8]' (FDCE) to 'Shift_IN4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN21_Real_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN11_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_5_Img_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN30_Real_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN21_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_3_Img_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_4_Real_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN4_Img_reg[8]' (FDCE) to 'Shift_IN2_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_2_Real_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'Shift_IN2_Img_reg[8]' (FDCE) to 'Shift_IN1_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN11_Img_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN10_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_1_Real_reg[8]' (FDCE) to 'SignalSample_4_Img_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Shift_IN1_Img_reg[8] )
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN21_Img_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN20_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN30_Img_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN20_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN01_Real_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN20_Real_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_4_Img_reg[8]' (FDCE) to 'SignalSample_2_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN10_Real_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN01_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'SignalSample_2_Img_reg[8]' (FDCE) to 'SignalSample_1_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN20_Real_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN10_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN01_Img_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN10_Img_reg[8]'
+INFO: [Synth 8-3886] merging instance 'FFT_8_Point_Radix_2_Unit/First_IN10_Img_reg[8]' (FDC) to 'FFT_8_Point_Radix_2_Unit/First_IN20_Img_reg[8]'
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Subtractor/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Subtractor/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Subtractor/OUT_Img_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Subtractor/OUT_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Subtractor/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Subtractor/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT7_Img_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT7_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT7_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT7_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Multiplier/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Multiplier/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Multiplier/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Subtractor/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Subtractor/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Subtractor/OUT_Real_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Subtractor/OUT_Real_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Subtractor/OUT_Real_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Subtractor/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT7_Real_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT7_Real_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT7_Real_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT7_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Adder/OUT_Img_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Adder/OUT_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Adder/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Adder/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT6_Img_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT6_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT6_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT6_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Adder/OUT_Real_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Adder/OUT_Real_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Adder/OUT_Real_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_3/Cplx_Adder/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT6_Real_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT6_Real_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT6_Real_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT6_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Adder/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Subtractor/OUT_Img_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Subtractor/OUT_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Subtractor/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Subtractor/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT5_Img_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT5_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT5_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT5_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Multiplier/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_1/Cplx_Adder/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Subtractor/OUT_Real_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Subtractor/OUT_Real_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Subtractor/OUT_Real_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Subtractor/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT5_Real_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT5_Real_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT5_Real_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT5_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Adder/OUT_Img_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Adder/OUT_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Adder/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Adder/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT4_Img_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT4_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT4_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT4_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Adder/OUT_Real_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Adder/OUT_Real_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Adder/OUT_Real_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_2/Cplx_Adder/OUT_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT4_Real_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT4_Real_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT4_Real_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT4_Real_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Multiplier/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Multiplier/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Adder/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/First_Stage/MAC_0/Cplx_Adder/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Subtractor/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Second_Stage/MAC_0/Cplx_Subtractor/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Subtractor/OUT_Img_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Subtractor/OUT_Img_reg[10]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Subtractor/OUT_Img_reg[9]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (FFT_8_Point_Radix_2_Unit/Third_Stage/MAC_1/Cplx_Subtractor/OUT_Img_reg[8]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+WARNING: [Synth 8-3332] Sequential element (Shift_OUT3_Img_reg[11]) is unused and will be removed from module FFT_8_Point_Radix_2_Wrapper.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 865.344 ; gain = 551.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 9      | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 9      | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 9      | 19     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 9      | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 9      | -      | -      | 21     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 9      | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 10     | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 10     | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 10     | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 10     | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 10     | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 10     | -      | -      | 22     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 10     | 20     | -      | 20     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 11     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C+A*B       | 12     | 11     | 21     | -      | 21     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|Complex_Multi | A*B         | 12     | 11     | -      | -      | 23     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|Complex_Multi | C-A*B       | 12     | 11     | 21     | -      | 21     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++--------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:156]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:157]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:156]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:157]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:152]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:153]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:152]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:153]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:148]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:148]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:144]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:145]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:144]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:145]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:59 . Memory (MB): peak = 906.742 ; gain = 593.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:01:01 . Memory (MB): peak = 921.539 ; gain = 607.828
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:52]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv:51]
+INFO: [Synth 8-3886] merging instance 'i_457' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_487' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_467' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_526' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_507' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_536' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_477' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_555' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_609' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_582' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_497' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_620' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_546' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_573' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_640' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_658' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_517' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_564' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_591' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_600' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_631' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_649' (FDC) to 'i_676'
+INFO: [Synth 8-3886] merging instance 'i_667' (FDC) to 'i_676'
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:156]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:157]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:156]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:157]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:152]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:153]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:152]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:153]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:148]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:148]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:149]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:144]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:145]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:55]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv:56]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:144]
+INFO: [Synth 8-5844] Detected registers with asynchronous reset at DSP/BRAM block boundary. Consider using synchronous reset for optimal packing [O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv:145]
+INFO: [Common 17-14] Message 'Synth 8-5844' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:02 . Memory (MB): peak = 944.492 ; gain = 630.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:04 . Memory (MB): peak = 944.492 ; gain = 630.781
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:04 . Memory (MB): peak = 944.492 ; gain = 630.781
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 944.492 ; gain = 630.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 944.492 ; gain = 630.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 944.492 ; gain = 630.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 944.492 ; gain = 630.781
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |   116|
+|3     |DSP48E1   |    24|
+|4     |DSP48E1_1 |    24|
+|5     |LUT1      |     2|
+|6     |LUT2      |    32|
+|7     |LUT3      |   511|
+|8     |LUT4      |     3|
+|9     |LUT5      |     2|
+|10    |LUT6      |     4|
+|11    |FDCE      |   939|
+|12    |IBUF      |    19|
+|13    |OBUF      |    16|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------+-------------------------------------+------+
+|      |Instance                   |Module                               |Cells |
++------+---------------------------+-------------------------------------+------+
+|1     |top                        |                                     |  1693|
+|2     |  Count_module             |Dn_Counter                           |    20|
+|3     |  FFT_8_Point_Radix_2_Unit |FFT_8_Point_Radix_2_TOP              |  1246|
+|4     |    First_Stage            |Single_Stage_FFT_8_2                 |   438|
+|5     |      MAC_0                |MAC_Unit                             |   116|
+|6     |        Cplx_Adder         |Complex_Add_Sub_27                   |    36|
+|7     |        Cplx_Multiplier    |Complex_Multi_28                     |    40|
+|8     |        Cplx_Subtractor    |Complex_Add_Sub__parameterized0_29   |    40|
+|9     |      MAC_1                |MAC_Unit_16                          |    90|
+|10    |        Cplx_Adder         |Complex_Add_Sub_24                   |    26|
+|11    |        Cplx_Multiplier    |Complex_Multi_25                     |    46|
+|12    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized0_26   |    18|
+|13    |      MAC_2                |MAC_Unit_17                          |   142|
+|14    |        Cplx_Adder         |Complex_Add_Sub_21                   |    48|
+|15    |        Cplx_Multiplier    |Complex_Multi_22                     |    46|
+|16    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized0_23   |    48|
+|17    |      MAC_3                |MAC_Unit_18                          |    90|
+|18    |        Cplx_Adder         |Complex_Add_Sub                      |    26|
+|19    |        Cplx_Multiplier    |Complex_Multi_19                     |    46|
+|20    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized0_20   |    18|
+|21    |    Second_Stage           |Single_Stage_FFT_8_2__parameterized0 |   312|
+|22    |      MAC_0                |MAC_Unit__parameterized0             |    92|
+|23    |        Cplx_Adder         |Complex_Add_Sub__parameterized1_13   |    36|
+|24    |        Cplx_Multiplier    |Complex_Multi__parameterized0_14     |    20|
+|25    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized2_15   |    32|
+|26    |      MAC_1                |MAC_Unit__parameterized1             |    84|
+|27    |        Cplx_Adder         |Complex_Add_Sub__parameterized0_10   |    32|
+|28    |        Cplx_Multiplier    |Complex_Multi_11                     |    20|
+|29    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized0_12   |    32|
+|30    |      MAC_2                |MAC_Unit__parameterized0_7           |    78|
+|31    |        Cplx_Adder         |Complex_Add_Sub__parameterized1      |    28|
+|32    |        Cplx_Multiplier    |Complex_Multi__parameterized0        |    24|
+|33    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized2      |    20|
+|34    |      MAC_3                |MAC_Unit__parameterized1_8           |    58|
+|35    |        Cplx_Adder         |Complex_Add_Sub__parameterized0      |    18|
+|36    |        Cplx_Multiplier    |Complex_Multi                        |    22|
+|37    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized0_9    |    18|
+|38    |    Third_Stage            |Single_Stage_FFT_8_2__parameterized1 |   368|
+|39    |      MAC_0                |MAC_Unit__parameterized2             |    92|
+|40    |        Cplx_Adder         |Complex_Add_Sub__parameterized3      |    36|
+|41    |        Cplx_Multiplier    |Complex_Multi__parameterized1        |    20|
+|42    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized3_6    |    36|
+|43    |      MAC_1                |MAC_Unit__parameterized3             |    92|
+|44    |        Cplx_Adder         |Complex_Add_Sub__parameterized4      |    36|
+|45    |        Cplx_Multiplier    |Complex_Multi__parameterized2        |    20|
+|46    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized4_5    |    36|
+|47    |      MAC_2                |MAC_Unit__parameterized4             |    92|
+|48    |        Cplx_Adder         |Complex_Add_Sub__parameterized5_2    |    36|
+|49    |        Cplx_Multiplier    |Complex_Multi__parameterized3_3      |    20|
+|50    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized5_4    |    36|
+|51    |      MAC_3                |MAC_Unit__parameterized4_0           |    92|
+|52    |        Cplx_Adder         |Complex_Add_Sub__parameterized5      |    36|
+|53    |        Cplx_Multiplier    |Complex_Multi__parameterized3        |    20|
+|54    |        Cplx_Subtractor    |Complex_Add_Sub__parameterized5_1    |    36|
++------+---------------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 944.492 ; gain = 630.781
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 183 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:38 . Memory (MB): peak = 944.492 ; gain = 230.383
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:07 . Memory (MB): peak = 944.492 ; gain = 630.781
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 183 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+263 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:11 . Memory (MB): peak = 944.492 ; gain = 643.797
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.runs/synth_1/FFT_8_Point_Radix_2_Wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file FFT_8_Point_Radix_2_Wrapper_utilization_synth.rpt -pb FFT_8_Point_Radix_2_Wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 944.492 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 23 19:01:26 2025...

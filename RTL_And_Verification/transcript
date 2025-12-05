@@ -1,0 +1,534 @@
+# Compile of Complex_Add_Sub.sv was successful.
+# Compile of Complex_Multi.sv was successful.
+# Compile of FFT_8_Point_Radix_2_tb.sv was successful.
+# Compile of FFT_8_Point_Radix_2_TOP.sv was successful.
+# Compile of MAC_Unit.sv was successful.
+# Compile of Single_Stage_FFT_8_2.sv was successful.
+# Compile of Twiddle_LUT.sv was successful.
+# 7 compiles, 0 failed with no errors.
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 07:02:46 on Aug 24,2025
+# vlog -reportprogress 300 Complex_Add_Sub.sv Complex_Multi.sv FFT_8_Point_Radix_2_TOP.sv FFT_8_Point_Radix_2_tb.sv MAC_Unit.sv Single_Stage_FFT_8_2.sv Twiddle_LUT.sv "+cover" -covercells 
+# -- Compiling module Complex_Add_Sub
+# -- Compiling module Complex_Multi
+# -- Compiling module FFT_8_Point_Radix_2_TOP
+# -- Compiling module FFT_8_Point_Radix_2_tb
+# -- Compiling module MAC_Unit
+# -- Compiling module Single_Stage_FFT_8_2
+# -- Compiling module Twiddle_LUT
+# 
+# Top level modules:
+# 	FFT_8_Point_Radix_2_tb
+# End time: 07:02:46 on Aug 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.FFT_8_Point_Radix_2_tb -coverage 
+# Start time: 07:02:46 on Aug 24,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.FFT_8_Point_Radix_2_tb(fast)
+# Loading work.FFT_8_Point_Radix_2_TOP(fast)
+# Loading work.Single_Stage_FFT_8_2(fast)
+# Loading work.MAC_Unit(fast)
+# Loading work.Complex_Add_Sub(fast)
+# Loading work.Twiddle_LUT(fast)
+# Loading work.Complex_Multi(fast)
+# Loading work.Complex_Add_Sub(fast__1)
+# Loading work.Single_Stage_FFT_8_2(fast__1)
+# Loading work.MAC_Unit(fast__1)
+# Loading work.Complex_Add_Sub(fast__2)
+# Loading work.Complex_Multi(fast__1)
+# Loading work.Complex_Add_Sub(fast__3)
+# Loading work.MAC_Unit(fast__2)
+# Loading work.Single_Stage_FFT_8_2(fast__2)
+# Loading work.MAC_Unit(fast__3)
+# Loading work.Complex_Add_Sub(fast__4)
+# Loading work.Complex_Multi(fast__2)
+# Loading work.MAC_Unit(fast__4)
+# Loading work.Complex_Add_Sub(fast__5)
+# Loading work.Complex_Multi(fast__3)
+# Loading work.MAC_Unit(fast__5)
+# Loading work.Complex_Add_Sub(fast__6)
+# Loading work.Complex_Multi(fast__4)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ali Mohamed  Hostname: LAPTOP-RG0KROU6  ProcessID: 28372
+#           Attempting to use alternate WLF file "./wlftjfcfzx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjfcfzx
+# Test start
+# Average Error for seed no.          0 = 4.405418
+# Average Error for seed no.          1 = 4.037501
+# Average Error for seed no.          2 = 4.103915
+# Average Error for seed no.          3 = 5.024367
+# Average Error for seed no.          4 = 4.043043
+# Average Error for seed no.          5 = 3.524376
+# Average Error for seed no.          6 = 3.759165
+# Average Error for seed no.          7 = 3.865941
+# Average Error for seed no.          8 = 3.103673
+# Average Error for seed no.          9 = 4.416681
+# Average Error for seed no.         10 = 4.447525
+# Average Error for seed no.         11 = 4.513826
+# Average Error for seed no.         12 = 2.882042
+# Average Error for seed no.         13 = 3.073512
+# Average Error for seed no.         14 = 2.780811
+# Average Error for seed no.         15 = 2.373446
+# Average Error for seed no.         16 = 2.977158
+# Average Error for seed no.         17 = 3.207274
+# Average Error for seed no.         18 = 3.950476
+# Average Error for seed no.         19 = 2.797971
+# Average Error for seed no.         20 = 1.880629
+# Average Error for seed no.         21 = 4.303820
+# Average Error for seed no.         22 = 2.794861
+# Average Error for seed no.         23 = 2.604628
+# Average Error for seed no.         24 = 2.989721
+# Average Error for seed no.         25 = 3.869100
+# Average Error for seed no.         26 = 2.447430
+# Average Error for seed no.         27 = 3.021085
+# Average Error for seed no.         28 = 3.211609
+# Average Error for seed no.         29 = 3.590397
+# Average Error for seed no.         30 = 1.918043
+# Average Error for seed no.         31 = 3.817953
+# Average Error for seed no.         32 = 2.223431
+# Average Error for seed no.         33 = 3.144261
+# Average Error for seed no.         34 = 1.741702
+# Average Error for seed no.         35 = 2.214182
+# Average Error for seed no.         36 = 1.700313
+# Average Error for seed no.         37 = 3.522304
+# Average Error for seed no.         38 = 2.081155
+# Average Error for seed no.         39 = 3.497589
+# Average Error for seed no.         40 = 3.901944
+# Average Error for seed no.         41 = 3.691565
+# Average Error for seed no.         42 = 2.810202
+# Average Error for seed no.         43 = 3.592570
+# Average Error for seed no.         44 = 3.935057
+# Average Error for seed no.         45 = 2.703278
+# Average Error for seed no.         46 = 2.891489
+# Average Error for seed no.         47 = 2.941973
+# Average Error for seed no.         48 = 3.390579
+# Average Error for seed no.         49 = 2.997626
+# Average Error for seed no.         50 = 3.462277
+# Average Error for seed no.         51 = 2.703736
+# Average Error for seed no.         52 = 2.594071
+# Average Error for seed no.         53 = 2.789196
+# Average Error for seed no.         54 = 3.023993
+# Average Error for seed no.         55 = 2.577555
+# Average Error for seed no.         56 = 2.550534
+# Average Error for seed no.         57 = 1.841227
+# Average Error for seed no.         58 = 2.997290
+# Average Error for seed no.         59 = 2.642608
+# Average Error for seed no.         60 = 2.696842
+# Average Error for seed no.         61 = 2.926917
+# Average Error for seed no.         62 = 2.517020
+# Average Error for seed no.         63 = 4.348697
+# Average Error for seed no.         64 = 2.449808
+# Average Error for seed no.         65 = 3.136308
+# Average Error for seed no.         66 = 2.330743
+# Average Error for seed no.         67 = 2.666298
+# Average Error for seed no.         68 = 1.530863
+# Average Error for seed no.         69 = 2.206629
+# Average Error for seed no.         70 = 2.153089
+# Average Error for seed no.         71 = 3.364362
+# Average Error for seed no.         72 = 2.943202
+# Average Error for seed no.         73 = 3.053284
+# Average Error for seed no.         74 = 3.418181
+# Average Error for seed no.         75 = 2.218300
+# Average Error for seed no.         76 = 2.840722
+# Average Error for seed no.         77 = 2.678413
+# Average Error for seed no.         78 = 3.610109
+# Average Error for seed no.         79 = 2.398426
+# Average Error for seed no.         80 = 3.698521
+# Average Error for seed no.         81 = 2.706687
+# Average Error for seed no.         82 = 4.326687
+# Average Error for seed no.         83 = 1.935846
+# Average Error for seed no.         84 = 2.678212
+# Average Error for seed no.         85 = 2.530459
+# Average Error for seed no.         86 = 2.326691
+# Average Error for seed no.         87 = 1.918894
+# Average Error for seed no.         88 = 2.029449
+# Average Error for seed no.         89 = 4.236348
+# Average Error for seed no.         90 = 2.103535
+# Average Error for seed no.         91 = 2.831006
+# Average Error for seed no.         92 = 2.686083
+# Average Error for seed no.         93 = 2.858845
+# Average Error for seed no.         94 = 2.284300
+# Average Error for seed no.         95 = 2.181116
+# Average Error for seed no.         96 = 1.892926
+# Average Error for seed no.         97 = 2.543193
+# Average Error for seed no.         98 = 1.591838
+# Average Error for seed no.         99 = 1.943823
+# Total Average Error across simulation = 2.966938
+# ** Note: $stop    : FFT_8_Point_Radix_2_tb.sv(370)
+#    Time: 1100 ns  Iteration: 1  Instance: /FFT_8_Point_Radix_2_tb
+# Break in Module FFT_8_Point_Radix_2_tb at FFT_8_Point_Radix_2_tb.sv line 370
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 07:03:05 on Aug 24,2025
+# vcover report FFT_8_Point_Radix_2_tb.ucdb -details -annotate -all -output FFT_8_Point_Radix_2_cover_report.txt 
+# End time: 07:03:05 on Aug 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (O:/ADI_Internship/Assignments/FFT_Final_Project/RTL_And_Verification/FFT_8_Point_Radix_2.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (O:/ADI_Internship/Assignments/FFT_Final_Project/RTL_And_Verification/FFT_8_Point_Radix_2.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 07:04:28 on Aug 24,2025, Elapsed time: 0:01:42
+# Errors: 2, Warnings: 5
+coverage report -summary
+# Coverage command may be used in loaded simulation and in viewcov mode only.
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 07:30:53 on Aug 24,2025
+# vlog -reportprogress 300 Complex_Add_Sub.sv Complex_Multi.sv FFT_8_Point_Radix_2_TOP.sv FFT_8_Point_Radix_2_tb.sv MAC_Unit.sv Single_Stage_FFT_8_2.sv Twiddle_LUT.sv "+cover" -covercells 
+# -- Compiling module Complex_Add_Sub
+# -- Compiling module Complex_Multi
+# -- Compiling module FFT_8_Point_Radix_2_TOP
+# -- Compiling module FFT_8_Point_Radix_2_tb
+# -- Compiling module MAC_Unit
+# -- Compiling module Single_Stage_FFT_8_2
+# -- Compiling module Twiddle_LUT
+# 
+# Top level modules:
+# 	FFT_8_Point_Radix_2_tb
+# End time: 07:30:53 on Aug 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.FFT_8_Point_Radix_2_tb -coverage 
+# Start time: 07:30:53 on Aug 24,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.FFT_8_Point_Radix_2_tb(fast)
+# Loading work.FFT_8_Point_Radix_2_TOP(fast)
+# Loading work.Single_Stage_FFT_8_2(fast)
+# Loading work.MAC_Unit(fast)
+# Loading work.Complex_Add_Sub(fast)
+# Loading work.Twiddle_LUT(fast)
+# Loading work.Complex_Multi(fast)
+# Loading work.Complex_Add_Sub(fast__1)
+# Loading work.Single_Stage_FFT_8_2(fast__1)
+# Loading work.MAC_Unit(fast__1)
+# Loading work.Complex_Add_Sub(fast__2)
+# Loading work.Complex_Multi(fast__1)
+# Loading work.Complex_Add_Sub(fast__3)
+# Loading work.MAC_Unit(fast__2)
+# Loading work.Single_Stage_FFT_8_2(fast__2)
+# Loading work.MAC_Unit(fast__3)
+# Loading work.Complex_Add_Sub(fast__4)
+# Loading work.Complex_Multi(fast__2)
+# Loading work.MAC_Unit(fast__4)
+# Loading work.Complex_Add_Sub(fast__5)
+# Loading work.Complex_Multi(fast__3)
+# Loading work.MAC_Unit(fast__5)
+# Loading work.Complex_Add_Sub(fast__6)
+# Loading work.Complex_Multi(fast__4)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ali Mohamed  Hostname: LAPTOP-RG0KROU6  ProcessID: 28372
+#           Attempting to use alternate WLF file "./wlftck1fyk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftck1fyk
+# Test start
+# Average Error for seed no.          0 = 4.405418
+# Average Error for seed no.          1 = 4.037501
+# Average Error for seed no.          2 = 4.103915
+# Average Error for seed no.          3 = 5.024367
+# Average Error for seed no.          4 = 4.043043
+# Average Error for seed no.          5 = 3.524376
+# Average Error for seed no.          6 = 3.759165
+# Average Error for seed no.          7 = 3.865941
+# Average Error for seed no.          8 = 3.103673
+# Average Error for seed no.          9 = 4.416681
+# Average Error for seed no.         10 = 4.447525
+# Average Error for seed no.         11 = 4.513826
+# Average Error for seed no.         12 = 2.882042
+# Average Error for seed no.         13 = 3.073512
+# Average Error for seed no.         14 = 2.780811
+# Average Error for seed no.         15 = 2.373446
+# Average Error for seed no.         16 = 2.977158
+# Average Error for seed no.         17 = 3.207274
+# Average Error for seed no.         18 = 3.950476
+# Average Error for seed no.         19 = 2.797971
+# Average Error for seed no.         20 = 1.880629
+# Average Error for seed no.         21 = 4.303820
+# Average Error for seed no.         22 = 2.794861
+# Average Error for seed no.         23 = 2.604628
+# Average Error for seed no.         24 = 2.989721
+# Average Error for seed no.         25 = 3.869100
+# Average Error for seed no.         26 = 2.447430
+# Average Error for seed no.         27 = 3.021085
+# Average Error for seed no.         28 = 3.211609
+# Average Error for seed no.         29 = 3.590397
+# Average Error for seed no.         30 = 1.918043
+# Average Error for seed no.         31 = 3.817953
+# Average Error for seed no.         32 = 2.223431
+# Average Error for seed no.         33 = 3.144261
+# Average Error for seed no.         34 = 1.741702
+# Average Error for seed no.         35 = 2.214182
+# Average Error for seed no.         36 = 1.700313
+# Average Error for seed no.         37 = 3.522304
+# Average Error for seed no.         38 = 2.081155
+# Average Error for seed no.         39 = 3.497589
+# Average Error for seed no.         40 = 3.901944
+# Average Error for seed no.         41 = 3.691565
+# Average Error for seed no.         42 = 2.810202
+# Average Error for seed no.         43 = 3.592570
+# Average Error for seed no.         44 = 3.935057
+# Average Error for seed no.         45 = 2.703278
+# Average Error for seed no.         46 = 2.891489
+# Average Error for seed no.         47 = 2.941973
+# Average Error for seed no.         48 = 3.390579
+# Average Error for seed no.         49 = 2.997626
+# Average Error for seed no.         50 = 3.462277
+# Average Error for seed no.         51 = 2.703736
+# Average Error for seed no.         52 = 2.594071
+# Average Error for seed no.         53 = 2.789196
+# Average Error for seed no.         54 = 3.023993
+# Average Error for seed no.         55 = 2.577555
+# Average Error for seed no.         56 = 2.550534
+# Average Error for seed no.         57 = 1.841227
+# Average Error for seed no.         58 = 2.997290
+# Average Error for seed no.         59 = 2.642608
+# Average Error for seed no.         60 = 2.696842
+# Average Error for seed no.         61 = 2.926917
+# Average Error for seed no.         62 = 2.517020
+# Average Error for seed no.         63 = 4.348697
+# Average Error for seed no.         64 = 2.449808
+# Average Error for seed no.         65 = 3.136308
+# Average Error for seed no.         66 = 2.330743
+# Average Error for seed no.         67 = 2.666298
+# Average Error for seed no.         68 = 1.530863
+# Average Error for seed no.         69 = 2.206629
+# Average Error for seed no.         70 = 2.153089
+# Average Error for seed no.         71 = 3.364362
+# Average Error for seed no.         72 = 2.943202
+# Average Error for seed no.         73 = 3.053284
+# Average Error for seed no.         74 = 3.418181
+# Average Error for seed no.         75 = 2.218300
+# Average Error for seed no.         76 = 2.840722
+# Average Error for seed no.         77 = 2.678413
+# Average Error for seed no.         78 = 3.610109
+# Average Error for seed no.         79 = 2.398426
+# Average Error for seed no.         80 = 3.698521
+# Average Error for seed no.         81 = 2.706687
+# Average Error for seed no.         82 = 4.326687
+# Average Error for seed no.         83 = 1.935846
+# Average Error for seed no.         84 = 2.678212
+# Average Error for seed no.         85 = 2.530459
+# Average Error for seed no.         86 = 2.326691
+# Average Error for seed no.         87 = 1.918894
+# Average Error for seed no.         88 = 2.029449
+# Average Error for seed no.         89 = 4.236348
+# Average Error for seed no.         90 = 2.103535
+# Average Error for seed no.         91 = 2.831006
+# Average Error for seed no.         92 = 2.686083
+# Average Error for seed no.         93 = 2.858845
+# Average Error for seed no.         94 = 2.284300
+# Average Error for seed no.         95 = 2.181116
+# Average Error for seed no.         96 = 1.892926
+# Average Error for seed no.         97 = 2.543193
+# Average Error for seed no.         98 = 1.591838
+# Average Error for seed no.         99 = 1.943823
+# Total Average Error across simulation = 2.966938
+# ** Note: $stop    : FFT_8_Point_Radix_2_tb.sv(370)
+#    Time: 1100 ns  Iteration: 1  Instance: /FFT_8_Point_Radix_2_tb
+# Break in Module FFT_8_Point_Radix_2_tb at FFT_8_Point_Radix_2_tb.sv line 370
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 07:31:06 on Aug 24,2025
+# vcover report FFT_8_Point_Radix_2_tb.ucdb -details -annotate -all -output FFT_8_Point_Radix_2_cover_report.txt 
+# End time: 07:31:06 on Aug 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 07:31:07 on Aug 24,2025
+# vcover report FFT_8_Point_Radix_2_tb.ucdb -summary -output FFT_8_Point_Radix_2_summary.txt 
+# End time: 07:31:07 on Aug 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit -sim
+# ** Error: Acs sdne.
+# ;
+#        Unable to replace existing ini file (O:/ADI_Internship/Assignments/FFT_Final_Project/RTL_And_Verification/FFT_8_Point_Radix_2.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (O:/ADI_Internship/Assignments/FFT_Final_Project/RTL_And_Verification/FFT_8_Point_Radix_2.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 07:31:45 on Aug 24,2025, Elapsed time: 0:00:52
+# Errors: 2, Warnings: 3
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 07:31:51 on Aug 24,2025
+# vlog -reportprogress 300 Complex_Add_Sub.sv Complex_Multi.sv FFT_8_Point_Radix_2_TOP.sv FFT_8_Point_Radix_2_tb.sv MAC_Unit.sv Single_Stage_FFT_8_2.sv Twiddle_LUT.sv "+cover" -covercells 
+# -- Compiling module Complex_Add_Sub
+# -- Compiling module Complex_Multi
+# -- Compiling module FFT_8_Point_Radix_2_TOP
+# -- Compiling module FFT_8_Point_Radix_2_tb
+# -- Compiling module MAC_Unit
+# -- Compiling module Single_Stage_FFT_8_2
+# -- Compiling module Twiddle_LUT
+# 
+# Top level modules:
+# 	FFT_8_Point_Radix_2_tb
+# End time: 07:31:51 on Aug 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.FFT_8_Point_Radix_2_tb -coverage 
+# Start time: 07:31:51 on Aug 24,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading sv_std.std
+# Loading work.FFT_8_Point_Radix_2_tb(fast)
+# Loading work.FFT_8_Point_Radix_2_TOP(fast)
+# Loading work.Single_Stage_FFT_8_2(fast)
+# Loading work.MAC_Unit(fast)
+# Loading work.Complex_Add_Sub(fast)
+# Loading work.Twiddle_LUT(fast)
+# Loading work.Complex_Multi(fast)
+# Loading work.Complex_Add_Sub(fast__1)
+# Loading work.Single_Stage_FFT_8_2(fast__1)
+# Loading work.MAC_Unit(fast__1)
+# Loading work.Complex_Add_Sub(fast__2)
+# Loading work.Complex_Multi(fast__1)
+# Loading work.Complex_Add_Sub(fast__3)
+# Loading work.MAC_Unit(fast__2)
+# Loading work.Single_Stage_FFT_8_2(fast__2)
+# Loading work.MAC_Unit(fast__3)
+# Loading work.Complex_Add_Sub(fast__4)
+# Loading work.Complex_Multi(fast__2)
+# Loading work.MAC_Unit(fast__4)
+# Loading work.Complex_Add_Sub(fast__5)
+# Loading work.Complex_Multi(fast__3)
+# Loading work.MAC_Unit(fast__5)
+# Loading work.Complex_Add_Sub(fast__6)
+# Loading work.Complex_Multi(fast__4)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ali Mohamed  Hostname: LAPTOP-RG0KROU6  ProcessID: 28372
+#           Attempting to use alternate WLF file "./wlftqrmcyz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqrmcyz
+# Test start
+# Average Error for seed no.          0 = 4.405418
+# Average Error for seed no.          1 = 4.037501
+# Average Error for seed no.          2 = 4.103915
+# Average Error for seed no.          3 = 5.024367
+# Average Error for seed no.          4 = 4.043043
+# Average Error for seed no.          5 = 3.524376
+# Average Error for seed no.          6 = 3.759165
+# Average Error for seed no.          7 = 3.865941
+# Average Error for seed no.          8 = 3.103673
+# Average Error for seed no.          9 = 4.416681
+# Average Error for seed no.         10 = 4.447525
+# Average Error for seed no.         11 = 4.513826
+# Average Error for seed no.         12 = 2.882042
+# Average Error for seed no.         13 = 3.073512
+# Average Error for seed no.         14 = 2.780811
+# Average Error for seed no.         15 = 2.373446
+# Average Error for seed no.         16 = 2.977158
+# Average Error for seed no.         17 = 3.207274
+# Average Error for seed no.         18 = 3.950476
+# Average Error for seed no.         19 = 2.797971
+# Average Error for seed no.         20 = 1.880629
+# Average Error for seed no.         21 = 4.303820
+# Average Error for seed no.         22 = 2.794861
+# Average Error for seed no.         23 = 2.604628
+# Average Error for seed no.         24 = 2.989721
+# Average Error for seed no.         25 = 3.869100
+# Average Error for seed no.         26 = 2.447430
+# Average Error for seed no.         27 = 3.021085
+# Average Error for seed no.         28 = 3.211609
+# Average Error for seed no.         29 = 3.590397
+# Average Error for seed no.         30 = 1.918043
+# Average Error for seed no.         31 = 3.817953
+# Average Error for seed no.         32 = 2.223431
+# Average Error for seed no.         33 = 3.144261
+# Average Error for seed no.         34 = 1.741702
+# Average Error for seed no.         35 = 2.214182
+# Average Error for seed no.         36 = 1.700313
+# Average Error for seed no.         37 = 3.522304
+# Average Error for seed no.         38 = 2.081155
+# Average Error for seed no.         39 = 3.497589
+# Average Error for seed no.         40 = 3.901944
+# Average Error for seed no.         41 = 3.691565
+# Average Error for seed no.         42 = 2.810202
+# Average Error for seed no.         43 = 3.592570
+# Average Error for seed no.         44 = 3.935057
+# Average Error for seed no.         45 = 2.703278
+# Average Error for seed no.         46 = 2.891489
+# Average Error for seed no.         47 = 2.941973
+# Average Error for seed no.         48 = 3.390579
+# Average Error for seed no.         49 = 2.997626
+# Average Error for seed no.         50 = 3.462277
+# Average Error for seed no.         51 = 2.703736
+# Average Error for seed no.         52 = 2.594071
+# Average Error for seed no.         53 = 2.789196
+# Average Error for seed no.         54 = 3.023993
+# Average Error for seed no.         55 = 2.577555
+# Average Error for seed no.         56 = 2.550534
+# Average Error for seed no.         57 = 1.841227
+# Average Error for seed no.         58 = 2.997290
+# Average Error for seed no.         59 = 2.642608
+# Average Error for seed no.         60 = 2.696842
+# Average Error for seed no.         61 = 2.926917
+# Average Error for seed no.         62 = 2.517020
+# Average Error for seed no.         63 = 4.348697
+# Average Error for seed no.         64 = 2.449808
+# Average Error for seed no.         65 = 3.136308
+# Average Error for seed no.         66 = 2.330743
+# Average Error for seed no.         67 = 2.666298
+# Average Error for seed no.         68 = 1.530863
+# Average Error for seed no.         69 = 2.206629
+# Average Error for seed no.         70 = 2.153089
+# Average Error for seed no.         71 = 3.364362
+# Average Error for seed no.         72 = 2.943202
+# Average Error for seed no.         73 = 3.053284
+# Average Error for seed no.         74 = 3.418181
+# Average Error for seed no.         75 = 2.218300
+# Average Error for seed no.         76 = 2.840722
+# Average Error for seed no.         77 = 2.678413
+# Average Error for seed no.         78 = 3.610109
+# Average Error for seed no.         79 = 2.398426
+# Average Error for seed no.         80 = 3.698521
+# Average Error for seed no.         81 = 2.706687
+# Average Error for seed no.         82 = 4.326687
+# Average Error for seed no.         83 = 1.935846
+# Average Error for seed no.         84 = 2.678212
+# Average Error for seed no.         85 = 2.530459
+# Average Error for seed no.         86 = 2.326691
+# Average Error for seed no.         87 = 1.918894
+# Average Error for seed no.         88 = 2.029449
+# Average Error for seed no.         89 = 4.236348
+# Average Error for seed no.         90 = 2.103535
+# Average Error for seed no.         91 = 2.831006
+# Average Error for seed no.         92 = 2.686083
+# Average Error for seed no.         93 = 2.858845
+# Average Error for seed no.         94 = 2.284300
+# Average Error for seed no.         95 = 2.181116
+# Average Error for seed no.         96 = 1.892926
+# Average Error for seed no.         97 = 2.543193
+# Average Error for seed no.         98 = 1.591838
+# Average Error for seed no.         99 = 1.943823
+# Total Average Error across simulation = 2.966938
+# ** Note: $stop    : FFT_8_Point_Radix_2_tb.sv(370)
+#    Time: 1100 ns  Iteration: 1  Instance: /FFT_8_Point_Radix_2_tb
+# Break in Module FFT_8_Point_Radix_2_tb at FFT_8_Point_Radix_2_tb.sv line 370
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 07:32:05 on Aug 24,2025
+# vcover report FFT_8_Point_Radix_2_tb.ucdb -details -annotate -all -output FFT_8_Point_Radix_2_cover_report.txt 
+# End time: 07:32:05 on Aug 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 07:32:05 on Aug 24,2025
+# vcover report FFT_8_Point_Radix_2_tb.ucdb -summary -output FFT_8_Point_Radix_2_Coverage_summary.txt 
+# End time: 07:32:05 on Aug 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (O:/ADI_Internship/Assignments/FFT_Final_Project/RTL_And_Verification/FFT_8_Point_Radix_2.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (O:/ADI_Internship/Assignments/FFT_Final_Project/RTL_And_Verification/FFT_8_Point_Radix_2.mpf).  File can not be renamed.
+# Saving coverage database on exit...
+# End time: 07:32:14 on Aug 24,2025, Elapsed time: 0:00:23
+# Errors: 2, Warnings: 3
+# Compile of FFT_8_Point_Radix_2_Wrapper.sv was successful.

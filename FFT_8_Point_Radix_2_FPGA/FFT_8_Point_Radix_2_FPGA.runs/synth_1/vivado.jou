@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Aug 23 19:00:08 2025
+# Process ID: 2936
+# Current directory: O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.runs/synth_1
+# Command line: vivado.exe -log FFT_8_Point_Radix_2_Wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FFT_8_Point_Radix_2_Wrapper.tcl
+# Log file: O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.runs/synth_1/FFT_8_Point_Radix_2_Wrapper.vds
+# Journal file: O:/ADI_Internship/Assignments/FFT_Final_Project/FFT_8_Point_Radix_2_FPGA/FFT_8_Point_Radix_2_FPGA.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FFT_8_Point_Radix_2_Wrapper.tcl -notrace

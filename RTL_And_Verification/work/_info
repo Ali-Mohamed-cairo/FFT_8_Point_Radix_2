@@ -1,0 +1,275 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.1 2021.01, Jan 19 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dO:/ASIC_Diploma/System/UART/UART_TX/Implementation
+T_opt
+!s110 1755685402
+V8zM14b=08_0f2?E4_HAMm1
+Z2 04 22 4 work FFT_8_Point_Radix_2_tb fast 0
+=1-002b67dfc614-68a5a21a-7a-6ed4
+Z3 !s124 OEM100
+Z4 o-quiet -auto_acc_if_foreign -work work +acc
+Z5 tCvgOpt 0
+n@_opt
+Z6 OL;O;2021.1;73
+R1
+T_opt1
+!s110 1755949308
+Vc2lNfJb?d7818kAkzb<9:0
+R2
+=1-002b67dfc614-68a9a8fc-85-2884
+R3
+R4
+R5
+n@_opt1
+R6
+R1
+vComplex_Add_Sub
+Z7 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z8 !s110 1756009911
+!i10b 1
+!s100 aT4gN>hm1ARS^Na0_@Cj31
+IHh[N2hgQ?Q]KJm[83d7D23
+S1
+Z9 dO:/ADI_Internship/Assignments/FFT_Final_Project/RTL_And_Verification
+w1755748238
+8Complex_Add_Sub.sv
+FComplex_Add_Sub.sv
+!i122 483
+L0 1 66
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2021.1;73
+r1
+!s85 0
+31
+Z12 !s108 1756009911.000000
+Z13 !s107 Twiddle_LUT.sv|Single_Stage_FFT_8_2.sv|MAC_Unit.sv|FFT_8_Point_Radix_2_tb.sv|FFT_8_Point_Radix_2_TOP.sv|Complex_Multi.sv|Complex_Add_Sub.sv|
+Z14 !s90 -reportprogress|300|Complex_Add_Sub.sv|Complex_Multi.sv|FFT_8_Point_Radix_2_TOP.sv|FFT_8_Point_Radix_2_tb.sv|MAC_Unit.sv|Single_Stage_FFT_8_2.sv|Twiddle_LUT.sv|+cover|-covercells|
+!i113 0
+Z15 !s102 +cover -covercells
+Z16 o+cover -covercells -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@complex_@add_@sub
+vComplex_Multi
+R7
+R8
+!i10b 1
+!s100 cjUG^Rida1Z4ne1jCKFX62
+I4U>=Ejl;;abUU437SYe`?0
+S1
+R9
+w1755748195
+8Complex_Multi.sv
+FComplex_Multi.sv
+!i122 483
+L0 1 60
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R16
+R5
+n@complex_@multi
+vFFT_8_Point_Radix_2_tb
+R7
+R8
+!i10b 1
+!s100 dZ9?M60Li]D5U=:]d2MUI3
+IC@X;aKl>FD^Qe6<bYi[W33
+S1
+R9
+w1755753696
+8FFT_8_Point_Radix_2_tb.sv
+FFFT_8_Point_Radix_2_tb.sv
+!i122 483
+L0 9 365
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R16
+R5
+n@f@f@t_8_@point_@radix_2_tb
+vFFT_8_Point_Radix_2_TOP
+R7
+R8
+!i10b 1
+!s100 I0FQ`;iGcOMX:Z=F0NgFV1
+IKVo4S`fzol3`XLOQ<XWH41
+S1
+R9
+w1755743067
+8FFT_8_Point_Radix_2_TOP.sv
+FFFT_8_Point_Radix_2_TOP.sv
+!i122 483
+L0 1 530
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R16
+R5
+n@f@f@t_8_@point_@radix_2_@t@o@p
+vFFT_8_Point_Radix_2_Wrapper
+R7
+!s110 1756011853
+!i10b 1
+!s100 fbQm6eo^IAUMIzJkha?L41
+Iz`H5TgD:SPia@FEUV<OIW2
+S1
+R9
+w1756011824
+8O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv
+FO:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv
+!i122 484
+L0 1 487
+R10
+R11
+r1
+!s85 0
+31
+!s108 1756011853.000000
+!s107 O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv|
+!i113 0
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R5
+n@f@f@t_8_@point_@radix_2_@wrapper
+vMAC_Unit
+R7
+R8
+!i10b 1
+!s100 b20z5J:PRL7;WQAThL1l@0
+If5HRX_k_0HQRMnW1<ga2R0
+S1
+R9
+w1755740820
+8MAC_Unit.sv
+FMAC_Unit.sv
+!i122 483
+L0 1 110
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R16
+R5
+n@m@a@c_@unit
+vSingle_Stage_FFT_8_2
+R7
+R8
+!i10b 1
+!s100 abT[m7mgJj^HS69T79bI60
+Ihbm9O;emkP=C<j5SSm?fk3
+S1
+R9
+w1755685381
+8Single_Stage_FFT_8_2.sv
+FSingle_Stage_FFT_8_2.sv
+!i122 483
+L0 1 241
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R16
+R5
+n@single_@stage_@f@f@t_8_2
+vTwiddle_LUT
+R7
+R8
+!i10b 1
+!s100 Oii2gV33c3YIoRKgRko[k1
+I^l@Cd[P=oPl1<8<61g<V^2
+S1
+R9
+w1755695086
+8Twiddle_LUT.sv
+FTwiddle_LUT.sv
+!i122 483
+L0 1 34
+R10
+R11
+r1
+!s85 0
+31
+R12
+R13
+R14
+!i113 0
+R15
+R16
+R5
+n@twiddle_@l@u@t

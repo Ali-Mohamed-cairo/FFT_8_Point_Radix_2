@@ -1,0 +1,53 @@
+# Compile of Complex_Add_Sub.sv was successful.
+# Compile of Complex_Multi.sv was successful.
+# Compile of Dn_Counter.sv was successful.
+# Compile of FFT_8_Point_Radix_2_tb.sv was successful.
+# Compile of FFT_8_Point_Radix_2_TOP.sv was successful.
+# Compile of FFT_8_Point_Radix_2_Wrapper.sv was successful.
+# Compile of MAC_Unit.sv was successful.
+# Compile of Single_Stage_FFT_8_2.sv was successful.
+# Compile of Twiddle_LUT.sv was successful.
+# 9 compiles, 0 failed with no errors.
+vsim -voptargs=+acc work.FFT_8_Point_Radix_2_Wrapper
+# vsim -voptargs="+acc" work.FFT_8_Point_Radix_2_Wrapper 
+# Start time: 15:15:05 on Aug 21,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "FFT_8_Point_Radix_2_Wrapper(fast)".
+# Loading sv_std.std
+# Loading work.FFT_8_Point_Radix_2_Wrapper(fast)
+# Loading work.Dn_Counter(fast)
+# Loading work.FFT_8_Point_Radix_2_TOP(fast)
+# Loading work.Single_Stage_FFT_8_2(fast)
+# Loading work.MAC_Unit(fast)
+# Loading work.Complex_Add_Sub(fast)
+# Loading work.Twiddle_LUT(fast)
+# Loading work.Complex_Multi(fast)
+# Loading work.Complex_Add_Sub(fast__1)
+# Loading work.Single_Stage_FFT_8_2(fast__1)
+# Loading work.MAC_Unit(fast__1)
+# Loading work.Complex_Add_Sub(fast__2)
+# Loading work.Complex_Multi(fast__1)
+# Loading work.Complex_Add_Sub(fast__3)
+# Loading work.MAC_Unit(fast__2)
+# Loading work.Single_Stage_FFT_8_2(fast__2)
+# Loading work.MAC_Unit(fast__3)
+# Loading work.Complex_Add_Sub(fast__4)
+# Loading work.Complex_Multi(fast__2)
+# Loading work.MAC_Unit(fast__4)
+# Loading work.Complex_Add_Sub(fast__5)
+# Loading work.Complex_Multi(fast__3)
+# Loading work.MAC_Unit(fast__5)
+# Loading work.Complex_Add_Sub(fast__6)
+# Loading work.Complex_Multi(fast__4)
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_ASIC_Wrapper.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_ASIC_Wrapper.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_ASIC_Wrapper.mpf).  File can not be renamed.
+# End time: 15:15:27 on Aug 21,2025, Elapsed time: 0:00:22
+# Errors: 3, Warnings: 2

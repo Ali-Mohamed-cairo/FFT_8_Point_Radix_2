@@ -1,0 +1,10 @@
+Coverage Report Totals BY INSTANCES: Number of Instances 65
+
+    Enabled Coverage              Bins      Hits    Misses    Weight  Coverage
+    ----------------              ----      ----    ------    ------  --------
+    Branches                       156       106        50         1    67.94%
+    Conditions                       5         4         1         1    80.00%
+    Statements                     666       569        97         1    85.43%
+    Toggles                      12556      7068      5488         1    56.29%
+Total coverage (filtered view): 72.41%
+

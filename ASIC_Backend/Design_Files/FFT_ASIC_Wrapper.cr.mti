@@ -1,0 +1,64 @@
+O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv {1 {vlog -work work -vopt -sv -stats=none O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/MAC_Unit.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module MAC_Unit
+
+Top level modules:
+	MAC_Unit
+
+} {} {}} O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv {1 {vlog -work work -vopt -sv -stats=none O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Single_Stage_FFT_8_2.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Single_Stage_FFT_8_2
+
+Top level modules:
+	Single_Stage_FFT_8_2
+
+} {} {}} O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv {1 {vlog -work work -vopt -sv -stats=none O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_Wrapper.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module FFT_8_Point_Radix_2_Wrapper
+
+Top level modules:
+	FFT_8_Point_Radix_2_Wrapper
+
+} {} {}} O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv {1 {vlog -work work -vopt -sv -stats=none O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Add_Sub.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Complex_Add_Sub
+
+Top level modules:
+	Complex_Add_Sub
+
+} {} {}} O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Dn_Counter.sv {1 {vlog -work work -vopt -sv -stats=none O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Dn_Counter.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Dn_Counter
+
+Top level modules:
+	Dn_Counter
+
+} {} {}} O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_tb.sv {1 {vlog -work work -vopt -sv -stats=none O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_tb.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module FFT_8_Point_Radix_2_tb
+
+Top level modules:
+	FFT_8_Point_Radix_2_tb
+
+} {} {}} O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Twiddle_LUT.sv {1 {vlog -work work -vopt -sv -stats=none O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Twiddle_LUT.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Twiddle_LUT
+
+Top level modules:
+	Twiddle_LUT
+
+} {} {}} O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv {1 {vlog -work work -vopt -sv -stats=none O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/Complex_Multi.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module Complex_Multi
+
+Top level modules:
+	Complex_Multi
+
+} {} {}} O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv {1 {vlog -work work -vopt -sv -stats=none O:/ADI_Internship/Assignments/FFT_Final_Project/ASIC_Backend/Design_Files/FFT_8_Point_Radix_2_TOP.sv
+QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+-- Compiling module FFT_8_Point_Radix_2_TOP
+
+Top level modules:
+	FFT_8_Point_Radix_2_TOP
+
+} {} {}}
